@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Gigz_API.Models;
-using Microsoft.AspNetCore.Mvc;
 using S3API.Models;
-
+using Microsoft.AspNetCore.Mvc;
 namespace S3API.Controllers
 {
     [Route("api/[controller]")]

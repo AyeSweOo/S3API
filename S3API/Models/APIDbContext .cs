@@ -3,25 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
 using Microsoft.Extensions.Configuration;
 using S3API.Models;
-
-
-namespace Gigz_API.Models
-
+namespace S3API.Models
 {
     public class APIDbContext : DbContext
     {
-
-        protected readonly IConfiguration Configuration;
+       protected readonly IConfiguration Configuration;
 
         public APIDbContext(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
-
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             // connect to sql server database
@@ -32,9 +25,7 @@ namespace Gigz_API.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
-            base.OnModelCreating(modelBuilder);
-
+          base.OnModelCreating(modelBuilder);
         }
 
     }
