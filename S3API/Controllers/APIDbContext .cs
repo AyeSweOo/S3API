@@ -27,8 +27,8 @@ namespace Gigz_API.Models
             // connect to sql server database
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
         }
-
-        public DbSet<PayloadData> PayloadData { get; set; }
+        public DbSet<PayloadData1> PayloadData1 { get; set; }
+        public DbSet<PayloadData2> PayloadData2 { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

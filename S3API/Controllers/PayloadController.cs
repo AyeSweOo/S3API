@@ -19,15 +19,17 @@ namespace S3API.Controllers
             _context = context;
         
         }
+        [Route("[action]")]
         [HttpPost]
-        public async Task<IActionResult> PostPayloadAsync(Payload payload)
+        [ActionName("savePayload1")]
+        public async Task<IActionResult> PostPayload1Async(Payload1 payload1)
         {
             try
             {
                 //Receive the payload data
-                PayloadData  payloadData= payload.Data;
+                PayloadData1  payloadData1= payload1.data;
                 // Store the payload information in the database
-                _context.PayloadData.Add(payloadData);
+                _context.PayloadData1.Add(payloadData1);
                 await  _context.SaveChangesAsync();
                 return Ok(new {message = "Received payload and successfully saved." });
             
@@ -36,6 +38,27 @@ namespace S3API.Controllers
             {
                 // Handle exceptions and return appropriate response
                  throw new ApplicationException("An error occurred while processing the request.");
+            }
+        }
+        [Route("[action]")]
+        [HttpPost]
+        [ActionName("savePayload2")]
+        public async Task<IActionResult> PostPayload2Async(Payload2 payload2)
+        {
+            try
+            {
+                //Receive the payload data
+                PayloadData2 payloadData2 = payload2.data;
+                // Store the payload information in the database
+                _context.PayloadData2.Add(payloadData2);
+                await _context.SaveChangesAsync();
+                return Ok(new { message = "Received payload and successfully saved." });
+
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions and return appropriate response
+                throw new ApplicationException("An error occurred while processing the request.");
             }
         }
     }
