@@ -12,8 +12,7 @@ namespace S3API.Controllers
     [ApiController]
     public class PayloadController : ControllerBase
     {
-
-        private readonly APIDbContext _context;
+       private readonly APIDbContext _context;
         [Obsolete]
         public PayloadController(APIDbContext context)
         {
