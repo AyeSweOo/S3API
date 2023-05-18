@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Gigz_API.Models;
+
 using Microsoft.Extensions.Configuration;
 using S3API.Models;
-//using Gigz.Entities;
+
 
 namespace Gigz_API.Models
 
@@ -34,9 +34,6 @@ namespace Gigz_API.Models
         {
 
             base.OnModelCreating(modelBuilder);
-
-
-
 
         }
 
