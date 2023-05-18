@@ -5007,11 +5007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Testing Projects\\Assignments\\S3API\\S3API\\S3API.csproj",
+      "projectUniqueName": "D:\\S3 Assignment\\S3API\\S3API\\S3API.csproj",
       "projectName": "S3API",
-      "projectPath": "D:\\Projects\\Testing Projects\\Assignments\\S3API\\S3API\\S3API.csproj",
+      "projectPath": "D:\\S3 Assignment\\S3API\\S3API\\S3API.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Testing Projects\\Assignments\\S3API\\S3API\\obj\\",
+      "outputPath": "D:\\S3 Assignment\\S3API\\S3API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
