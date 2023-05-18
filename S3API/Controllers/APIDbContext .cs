@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Gigz_API.Models;
+
 using Microsoft.Extensions.Configuration;
 using S3API.Models;
-//using Gigz.Entities;
+
 
 namespace Gigz_API.Models
 
@@ -27,16 +27,13 @@ namespace Gigz_API.Models
             // connect to sql server database
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
         }
-
-        public DbSet<PayloadData> PayloadData { get; set; }
+        public DbSet<PayloadData1> PayloadData1 { get; set; }
+        public DbSet<PayloadData2> PayloadData2 { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             base.OnModelCreating(modelBuilder);
-
-
-
 
         }
 
